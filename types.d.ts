@@ -13,8 +13,6 @@ interface CandlestickChartProps {
   children?: React.ReactNode;
   mode?: "historical" | "live";
   initialPeriod?: Period;
-  liveInterval: "1s" | "1m";
-  setLiveInterval: (interval: "1s" | "1m") => void;
 }
 
 interface ConverterProps {
@@ -240,8 +238,8 @@ interface LiveDataProps {
 interface LiveCoinHeaderProps {
   name: string;
   image: string;
-  livePrice?: number;
-  livePriceChangePercentage24h: number;
+  currentPrice?: number;
+  priceChangePercentage24h: number;
   priceChangePercentage30d: number;
   priceChange24h: number;
 }

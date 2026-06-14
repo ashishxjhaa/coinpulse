@@ -10,7 +10,7 @@ const Headers = () => {
 
   return (
     <header>
-      <div className="min-container inner">
+      <div className="min-container inner px-14">
         <Link href="/">
           <Image src="/logo.svg" alt="CoinPulse logo" width={132} height={40} />
         </Link>
