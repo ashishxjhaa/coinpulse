@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Headers = () => {
+const Headers = ({ searchModal }: { searchModal: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
@@ -26,7 +26,7 @@ const Headers = () => {
             Home
           </Link>
 
-          <p>Search Modal</p>
+          {searchModal}
 
           <Link
             href="/coins"
